@@ -1,0 +1,9 @@
+.video-js {
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+video::cue {
+    font-size: 1.2rem;
+
+}

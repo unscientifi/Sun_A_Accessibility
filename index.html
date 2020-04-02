@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessbility</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
+    <script src="http://vjs.zencdn.net/4.12/video.js"></script>
+</head>
+<body>
+    <!-- <audio controls>
+        <source src="audio/audio.mp3" type="audio/mpeg">
+    </audio>
+
+    <video controls>
+        <source src="video/movie.mp4" type="video/mp4">
+        <source src="video/movie.ogg" type="video/ogg">
+        <source src="video/movie.webm" type="video/webm">
+    </video>
+    <video controls>
+        <source src="video/tvshow.mp4" type="video/mp4">
+        <source src="video/tvshow.ogg" type="video/ogg">
+        <source src="video/tvshow.webm" type="video/webm">  
+    </video> -->
+    <video
+    class="video-js vjs-default-skin" 
+    controls
+    preload="auto"
+    width="640"
+    height="360"
+    poster="images/movie.png"
+    data-setup="{}"
+  >
+    <source src="video/movie.mp4" type="video/mp4" />
+    <source src="video/movie.webm" type="video/webm" />
+    <source src="video/movie.ogg" type="video/ogg" />
+    <track default kind="subtitles" src="sub/movie.vtt" srclang="en" label="english"/>
+
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p>
+  </video>
+
+  <video
+  class="video-js vjs-default-skin" 
+  controls
+  preload="auto"
+  width="640"
+  height="360"
+  poster="images/tvshow.jpg"
+  data-setup="{}"
+>
+  <source src="video/tv.mp4" type="video/mp4" />
+  <source src="video/tv.webm" type="video/webm" />
+
+  <track default kind="subtitles" src="sub/tv.vtt" srclang="en" label="english"/>
+</video>
+
+<p>Let It Be</p>
+<audio controls>
+    <source src="audio/audio.mp3" type="audio/mpeg">
+        <source src="audio/audio.ogg" type="audio/ogg">
+</audio>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
